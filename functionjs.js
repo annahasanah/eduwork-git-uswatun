@@ -1,5 +1,5 @@
 
 function myfunction() {
-    alert("hello world");
+    alert("ini adalah tampilan popup");
 }
 myfonction();
