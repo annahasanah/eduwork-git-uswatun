@@ -1,12 +1,12 @@
-describe('browser action', () => {
-    it('should load books website', () => {
-        cy.visit('http://zero.webappsecurity.com/login.html', {timeout : 10000})
-        cy.url().should('include', 'login.html')
+describe('login-form', () => {
+    it('should keep me sign in', () => {
+        cy.visit('http://zero.webappsecurity.com/signin.html', {timeout : 10000})
+        cy.url().should('include', 'signin.html')
     
     })
 
-    it('should on click travel category', () => {
-        cy.get('a').contains('Travel').click()
-        cy.get('h1').contains('Travel')
+    it('should on click label', () => {
+        cy.get('.btn').click()
+        cy.get('checkbox').contains('user-remember-me')
     });
 });
